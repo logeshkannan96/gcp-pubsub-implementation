@@ -5,7 +5,7 @@ app.use(express.urlencoded({ extended: false }));
 const { PubSub } = require('@google-cloud/pubsub');
 const PORT = 3000;
 
-const pubsubClient = new PubSub({projectId: 'examly-dev'})
+const pubsubClient = new PubSub({projectId: 'project-id'})
 const topicNameOrId = 'sample-topic';
 
 app.post('/publishToFormSubmit', async (req, res) => {
